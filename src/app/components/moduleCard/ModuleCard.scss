@@ -1,0 +1,38 @@
+.ModuleCard {
+    color: #fff;
+    background-color: #EEA383;
+    max-width: 316px;
+    width: 100%;
+    margin: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    transition: .3s;
+}
+.ModuleCard:hover{
+    background-color: #f0946d;
+}
+
+.ModuleCard__title {
+    max-width: 270px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    padding-left: 22px;
+}
+
+.ModuleCard__txt {
+    max-width: 278px;
+    width: 100%;
+    padding-left: 42px;
+    font-size: 14px;
+}
+
+.ModuleCard__img {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 60px;
+}

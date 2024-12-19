@@ -1,0 +1,277 @@
+.IntroBlock{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.IntroBlock_container{
+    width: 1400px;
+    height: 600px;
+    background-color: #eea383;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+
+
+    @media screen and (max-width: 1400px) {
+        
+        width: 1200px;
+
+    }
+    @media screen and (max-width: 1250px) {
+        
+        width: 1000px;
+
+    }
+
+    @media screen and (max-width: 1050px) {
+        
+        width: 800px;
+        .IntroBlock_container_main_left img {
+                margin-left: -100px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        height: auto;
+        width: 600px;
+        flex-direction: column;
+        padding-top: 20px;
+        
+        .IntroBlock_container_main{
+            flex-direction: column-reverse;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .IntroBlock_container_main_left{
+            width: 100%;
+        }
+
+        .IntroBlock_container_main_left img {
+                margin-left: -100px;
+        }
+
+        .IntroBlock_container_main_right button{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+    }
+    @media screen and (max-width: 680px){
+        width: 500px;
+    }
+    @media screen and (max-width: 560px){
+        width: 400px;
+    }
+}
+
+.IntroBlock_container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+
+    @media screen and (max-width:850px){
+        display: none;
+    }
+}
+
+.IntroBlock_container_header_el{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #F6D1C1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.IntroBlock_container_header_el:hover{
+    background-color: #ebbaa6;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.IntroBlock_container_main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+            
+
+
+            .IntroBlock_container_main_left{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+
+            .IntroBlock_container_main_left img {
+                
+            }
+
+
+            .IntroBlock_container_main_right.modalOpen{padding-left: 20px;}
+
+            .IntroBlock_container_main_right{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                transition: 0.3s ease-in-out;
+                @media only screen and (max-width:850px) {
+                    width: 90% ;
+                }
+
+                .IntroBlock_container_main_right_title{
+                    max-width: 284px;
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+                .IntroBlock_container_main_right_additional{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+                .IntroBlock_container_main_right_txt{
+                    max-width: 470px;
+                    font-weight: 200;
+                    margin-bottom: 26px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap:10px;
+                    padding-left: 15px;    
+                }
+                
+                button{
+                    width: 280px;
+                    height: 70px;
+                    border-radius: 10px;
+                    color: white;
+                    background-color: #D23C3C;
+                    margin-top: 26px;
+                    border: none;
+                    font-size: 32px;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: .3s;
+                }
+                button:hover{
+                    background-color: #c72323;
+                    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+                }
+
+
+            }
+                
+
+
+}
+
+.IntroBlock_container_main_left_modal{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    background-color: #FAE8E0;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    .IntroBlock_container_main_left_modal_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .IntroBlock_container_main_left_modal_main{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .IntroBlock_container_main_left_modal_main_title{
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 55px;
+    }
+    .IntroBlock_container_main_left_modal_main_txt{
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+}
+
+.IntroBlock_container_main_left_modal.leftModalNotOpened{
+    transform: translateX(-1000px);
+}
+
+.IntroBlock_container_main_left_modal.leftModalopened{
+    transform: translateX(0px);
+}
+
+
+
+
+
+
+
+
+
+
+.IntroBlock_container_main_right_modal{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    background-color: #FAE8E0;
+    right: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    .IntroBlock_container_main_right_modal_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .IntroBlock_container_main_right_modal_main_title{
+        font-size:48px;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 55px;
+    }
+    .IntroBlock_container_main_right_modal_main_subTitle{
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 3px;
+    }
+    .IntroBlock_container_main_right_modal_main_txt{
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+.IntroBlock_container_main_right_modal.rightModalNotOpened{
+    transform: translateX(1000px);
+}
+
+.IntroBlock_container_main_right_modal.rightModalopened{
+    transform: translateX(0px);
+}

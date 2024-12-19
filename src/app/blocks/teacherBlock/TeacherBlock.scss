@@ -1,0 +1,124 @@
+.TeacherBlock {
+    max-width: 1402px;
+    width: 100%;
+    margin: 0 auto;
+
+    .TeacherBlock_title {
+        max-width: 1402px;
+        font-size: 36px;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+
+    .TeacherBlock_img {
+        width: 655px;
+        height: 420px;
+        border-radius: 20px;
+        border-image-width: 555px;
+        object-fit: cover;
+    }
+
+    .kadik {
+        object-position: 0px 1px;
+    }
+
+    .hajatova {
+        object-position: 0px -50px;
+    }
+
+    .Teachers_container__line {
+        display: flex;
+        max-width: 1402px;
+        gap: 92px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .TeacherBlock {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    
+        .TeacherBlock_title {
+            max-width: 1402px;
+            font-size: 36px;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+    
+        .TeacherBlock_img {
+            max-width: 560px;
+            height: 420px;
+            border-radius: 20px;
+            border-image-width: 555px;
+            object-fit: cover;
+        }
+    
+        .Teachers_container__line {
+            display: flex;
+            max-width: 1200px;
+            gap: 79px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .TeacherBlock {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    
+        .TeacherBlock_title {
+            max-width: 1402px;
+            font-size: 36px;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+    
+        .TeacherBlock_img {
+            max-width: 373px;
+            height: 420px;
+            border-radius: 20px;
+            border-image-width: 555px;
+            object-fit: cover;
+        }
+    
+        .Teachers_container__line {
+            display: flex;
+            max-width: 1200px;
+            gap: 53px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .TeacherBlock {
+        max-width: 400px;
+        margin: 0 auto;
+
+        .TeacherBlock_img {
+            width: 400px;
+        }
+
+        .Teachers_container__line {
+            gap: 10px;
+            margin-top: 40px;
+        }
+    }
+
+    .TeacherBlock_img {
+        width: 400px;
+    }
+    
+    .Teachers_container__line:nth-child(2) {
+        flex-direction: column-reverse;
+        .TeacherBlock_img {
+            width: 400px;
+        }
+    }
+}

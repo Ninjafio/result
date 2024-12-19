@@ -1,0 +1,63 @@
+.ModuleBlock__BG {
+    background-color: #FAE8E0;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 680px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    @media screen and (max-width: 1400px) {
+        max-width: 1200px;
+    }
+    @media screen and (max-width: 1250px) {
+        max-width: 800px;
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 850px) {
+        max-width: 400px;
+        padding-top: 50px;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.ModuleBlock__img1 {
+    position: absolute;
+    align-self: flex-start;
+    margin-bottom: 450px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.ModuleBlock__img2 {
+    position: absolute;
+    margin-top: 400px;
+    right: 70;
+    z-index: 1;
+    
+    @media screen and (max-width: 1250px) {
+        display: none;
+    }
+}
+
+.ModuleBlock__BG h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.ModuleBlock__cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1135px;
+    width: 100%;
+    justify-content: center;
+    gap: 63px;
+    z-index: 6;
+}

@@ -1,0 +1,27 @@
+.Footer {
+    background-color: #000;
+    margin-top: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Footer_txt {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .Footer {
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,57 @@
+.TeacherCard {
+    color: #131313;
+    background-color: #FAE8E0;
+    max-width: 655px;
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    transition: .3s;
+}
+.TeacherCard:hover{
+    background-color: #ffdaca;
+}
+
+.TeacherCard__title {
+    max-width: 470px;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    padding-left: 22px;
+}
+
+.TeacherCard__txt {
+    max-width: 278px;
+    width: 100%;
+    padding-left: 32px;
+    font-size: 20px ;
+    font-weight: 600;
+}
+
+.TeacherCard__txt li {
+    list-style-type: none;
+}
+
+.TeacherCard__vac {
+    font-weight: 300;
+}
+
+.ModuleCard__img {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1420px) {
+    .TeacherCard {
+        max-width: 560px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .TeacherCard {
+        max-width: 373px;
+    }
+}

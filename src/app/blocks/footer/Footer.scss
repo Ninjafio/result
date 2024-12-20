@@ -1,7 +1,7 @@
 .Footer {
     background-color: #000;
     margin-top: 100px;
-    height: 150px;
+    min-height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+}
+.Footer_txt_new {
+    color: #fff;
+    width: 350px;
 }
 
 .social {
